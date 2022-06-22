@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <div class="cuerpo">
+        <!-- inicio del header -->
+        <header>
+            <!-- inicio del logo -->
+            <div class="contenedor">
+                <a href="index.html"><img src="../imagenes/nuevoLogo.png" alt="" class="logo"></a>
+             
+                  <img onclick="handleOnClick()" class="cart" src="../imagenes/cart.png"></img>  
+               <div class="compras" id="compras">
+                    
+               </div>
+            </div>
+            <!-- fin del logo -->
+            <!-- inicio del nav -->
+            <nav class="navegacion">
+                <ul class="barraNavegacion">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="quienessomos.html">Quienes Somos</a></li>
+                    <li><a href="ayuda.html">Ayuda</a></li>
+                </ul>
+            </nav>
+            <!-- fin del nav -->
+        </header>
+        <!-- fin del header -->
+        <section>
+            <!-- inicio de productos -->
+            <article id="productos">
+                <div class="contenedorProductos">
+                    <div class="productoRow">
+                        <div class="producto">
+                            <img src="../imagenes/zeus-fondo-blanco.jpg" alt="" class="imagenproducto">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam exercitationem harum
+                                quis</p>
+                            <div class="productInfo">
+                                <p class="stock">Stock: 4</p>
+                                <p class="precio">$2500</p>
+
+                            </div>
+                            <div class="productInfo">
+                                <input type="number" class="numeritos">
+                                <button class="elBoton" onclick="handleBuy(1)">Add</button>
+                            </div>
+                        </div>
+
+
+                        <div class="producto">
+                            <img src="../imagenes/producto2.jpg" alt="" class="imagenproducto">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam exercitationem harum
+                                quis</p>
+                            <div class="productInfo">
+                                <p class="stock">Stock: 6</p>
+                                <p class="precio">$3600</p>
+
+                            </div>
+                            <div class="productInfo">
+                                <input type="number" class="numeritos">
+                                <button class="elBoton" onclick="handleBuy(2)">Add</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="productoRow">
+                        <div class="producto">
+                            <img src="../imagenes/producto3.jpg" alt="" class="imagenproducto">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam exercitationem harum
+                                quis</p>
+                            <div class="productInfo">
+                                <p class="stock">Stock: 4</p>
+                                <p class="precio">$5850</p>
+
+                            </div>
+                            <div class="productInfo">
+                                <input type="number" class="numeritos">
+                                <button class="elBoton" onclick="handleBuy(3)">Add</button>
+
+                            </div>
+                        </div>
+
+                        <div class="producto">
+                            <img src="../imagenes/producto4.jpg" alt="" class="imagenproducto">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam exercitationem harum
+                                quis</p>
+                            <div class="productInfo">
+                                <p class="stock">Stock: 9</p>
+                                <p class="precio">$7550</p>
+
+                            </div>
+                            <div class="productInfo">
+                                <input type="number" class="numeritos">
+                                <button class="elBoton" onclick="handleBuy(4)">Add</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </article>
+            <!-- fin de productos -->
+        </section>
+
+
+
+        <!-- inicio del footer -->
+        <footer class="contenedorFooter">
+            <div class="footer">
+                <img src="../imagenes/nuevoLogo.png" alt="" class="logoFooter">
+                <p class="descripcion">&copy; 2006 Copyright AuraMuebles</p>
+                <div class="redes">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../imagenes/instagram.png" alt="" class="instagram">
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5491133960809&text=Hola+me+gustaria+saber+si+tienen+un+catalogo+de+muebles"
+                        target="_blank">
+                        <img src="../imagenes/whatsapp.png" alt="" class="instagram">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="../imagenes/twitter.jpg" alt="" class="instagram">
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+        <!-- fin del footer -->
+    </div>
+    <script src="../store/productos.js"></script>
+
+</body>
+
+</html>
