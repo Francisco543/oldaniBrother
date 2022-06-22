@@ -39,10 +39,14 @@ const handleBuy = (numeroProducto) => {
             if(localStorage.getItem("precioFinal")){
                 const currentPrecio = localStorage.getItem("precioFinal")
                 localStorage.setItem("precioFinal",`${parseInt(currentPrecio) + 2500}`)
-                console.log(localStorage.getItem("precioFinal"))     
+                console.log(localStorage.getItem("precioFinal"))   
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: ${parseInt(currentPrecio) + 2500}`
             }else{
                 localStorage.setItem("precioFinal",`2500`)
                 console.log(localStorage.getItem("precioFinal"))
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: 2500`
             }
             
             break;
@@ -69,8 +73,12 @@ const handleBuy = (numeroProducto) => {
             if(localStorage.getItem("precioFinal")){
                 const currentPrecio = localStorage.getItem("precioFinal")
                 localStorage.setItem("precioFinal",`${parseInt(currentPrecio) + 3600}`)
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: ${parseInt(currentPrecio) + 3600}`
             }else{
                 localStorage.setItem("precioFinal",`3600`)
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: 3600`
             }
             
            
@@ -98,8 +106,12 @@ const handleBuy = (numeroProducto) => {
             if(localStorage.getItem("precioFinal")){
                 const currentPrecio = localStorage.getItem("precioFinal")
                 localStorage.setItem("precioFinal",`${parseInt(currentPrecio) + 5850}`)
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: ${parseInt(currentPrecio) + 5850}`
             }else{
                 localStorage.setItem("precioFinal",`5850`)
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: 5850`
             }
             
         
@@ -127,8 +139,12 @@ const handleBuy = (numeroProducto) => {
             if(localStorage.getItem("precioFinal")){
                 const currentPrecio = localStorage.getItem("precioFinal")
                 localStorage.setItem("precioFinal",`${parseInt(currentPrecio) + 7550}`)
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: ${parseInt(currentPrecio) + 7550}`
             }else{
                 localStorage.setItem("precioFinal",`7550`)
+                const precioDiv = document.getElementById("total") 
+                precioDiv.innerHTML=`Total: 7550`
             }
             
  
