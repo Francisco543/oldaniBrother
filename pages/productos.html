@@ -11,43 +11,77 @@
     <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="cuerpo">
-        <!-- inicio del header -->
+       
         <header>
-            <!-- inicio del logo -->
-            <div class="contenedor">
-                <a href="index.html"><img src="../imagenes/nuevoLogo.png" alt="" class="logo"></a>
-                    <div class="contenedorCarrito">
-                        <img onclick="handleOnClick()" class="cart" src="../imagenes/cart.png"></img>  
-                        <p class="precio" id="total"></p>
-                    </div>
-                  
-               <div class="compras" id="compras">
-                    
-               </div>
-            </div>
-            <!-- fin del logo -->
-            <!-- inicio del nav -->
+            
             <nav class="navegacion">
-                <ul class="barraNavegacion">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="quienessomos.html">Quienes Somos</a></li>
-                    <li><a href="ayuda.html">Ayuda</a></li>
-                </ul>
+                <div class="contenedor">
+                    <a href="index.html"><img src="../imagenes/nuevoLogo.png" alt="" class="logo"></a> 
+                    <ul class="barraNavegacion">
+                        <li><a class="hover-underline-animation" href="index.html">Home</a></li>
+                        <li><a class="hover-underline-animation" href="productos.html">Productos</a></li>
+                        <li><a class="hover-underline-animation" href="contacto.html">Contacto</a></li>
+                        <li><a class="hover-underline-animation" href="quienessomos.html">Quienes Somos</a></li>
+                        <li><a class="hover-underline-animation" href="ayuda.html">Ayuda</a></li>
+                    </ul>  
+                </div>
+               
+                <div class="carritoContenedor">
+                    <img onclick="handleOnClick()" class="cart" src="../imagenes/cart.png"></img>  
+                    <p class="totalPrecio" id="total"></p>
+                </div>
+          
+                <div class="compras" id="compras">
+              
+                </div>
             </nav>
-            <!-- fin del nav -->
+         
         </header>
-        <!-- fin del header -->
+  
         <section>
-            <!-- inicio de productos -->
+         
             <article id="productos">
+                <div class="navLateral">
+                    <div class="contenedorCategoriaNav">
+                        <h2 class="tituloNavLateral">Categorias</h2>
+                        <p class="itemsNavLateral">- Sillones</p>
+                        <p class="itemsNavLateral">- Cocina</p>
+                        <p class="itemsNavLateral">- Living</p>
+                        <p class="itemsNavLateral">- Comedor</p>
+                    </div>
+                    <div class="contenedorCategoriaNav">
+                        <h2 class="tituloNavLateral">Condicion</h2>
+                        <p class="itemsNavLateral">- Nuevo</p>
+                        <p class="itemsNavLateral">- Usado</p>
+                    </div>
+                    <div class="contenedorCategoriaNav">
+                        <h2 class="tituloNavLateral">Precio</h2>
+                        <p class="itemsNavLateral">- Hasta $10.000</p>
+                        <p class="itemsNavLateral">- $10.000 a $30.000</p>
+                        <p class="itemsNavLateral">- Mas de $30.000</p>
+                        <div class="contenedorPrecioDesdeHasta">
+                            <input class="inputPrecios" type="number" placeholder="$" >
+                            -
+                            <input class="inputPrecios" type="number" placeholder="$" >
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M12.522,10.4l-3.559,3.562c-0.172,0.173-0.451,0.176-0.625,0c-0.173-0.173-0.173-0.451,0-0.624l3.248-3.25L8.161,6.662c-0.173-0.173-0.173-0.452,0-0.624c0.172-0.175,0.451-0.175,0.624,0l3.738,3.736C12.695,9.947,12.695,10.228,12.522,10.4 M18.406,10c0,4.644-3.764,8.406-8.406,8.406c-4.644,0-8.406-3.763-8.406-8.406S5.356,1.594,10,1.594C14.643,1.594,18.406,5.356,18.406,10M17.521,10c0-4.148-3.374-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.147,17.521,17.521,14.147,17.521,10"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedorCategoriaNav">
+                        <h2 class="tituloNavLateral">Descuentos</h2>
+                        <p class="itemsNavLateral">- Desde 5% OFF</p>
+                        <p class="itemsNavLateral">- Desde 10% OFF</p>
+                        <p class="itemsNavLateral">- Desde 20% OFF</p>
+                        <p class="itemsNavLateral">- Desde 30% OFF</p>
+                    </div>
+                </div>
                 <div class="contenedorProductos">
                     <div class="productoRow">
                         <div class="producto">
@@ -151,7 +185,7 @@
         <!-- fin del footer -->
     </div>
     <script src="../store/productos.js"></script>
-
+   
 </body>
 
 </html>

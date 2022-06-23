@@ -8,9 +8,11 @@ const handleOnClick = () => {
         carritoCompras.style.visibility = "hidden"
     }
 }
+
 const cartDiv = document.getElementById("compras")
 cartDiv.innerHTML= localStorage.getItem("productos")
-
+const precioDiv = document.getElementById("total")
+precioDiv.innerHTML=`Total: ${localStorage.getItem("precioFinal")}`
 
 const handleBuy = (numeroProducto) => {
     const cartDiv = document.getElementById("compras")
@@ -154,3 +156,4 @@ const handleBuy = (numeroProducto) => {
             break;
     }
 }
+
